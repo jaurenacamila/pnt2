@@ -4,10 +4,14 @@ body {
     padding: 0;
 }
   
-h1 {
+section {
     text-align: center;
+}
+
+h1, h2 {
     margin-top: 20px;
     text-decoration: underline;
+    font-size: 2rem;
 }
   
 ul {
@@ -23,7 +27,7 @@ li {
 }
 
 button {
-    display: block;
+    display: inline-block;
     margin: 20px auto;
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -36,4 +40,23 @@ button {
 
 button:hover {
     background-color: #3e8e41;
+}
+
+#pelis-asc-container, #pelis-des-container {
+    display: none;
+}
+
+#pelis-asc-container.visible, #pelis-des-container.visible {
+    display: inline-block;
+}
+
+.row {
+    height: 250px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
 }
