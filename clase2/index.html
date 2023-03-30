@@ -9,7 +9,7 @@
     </head>
     <body>
         <section>
-            <h1>Condiciones:</h1>
+            <h1>Verificar Condiciones:</h1>
             <ul>
                 <li>Debe haber pelota</li>
                 <li>El equipo A tiene 11 jugadores</li>
@@ -21,25 +21,30 @@
             <hr>
         </section>
         <section>
-            <h2>Peliculas:</h2>
-            <ul>
-                <li>The Shawshank Redemption</li>
-                <li>The Godfather</li>
-                <li>The Dark Knight</li>
-                <li>The Lord of the Rings: The Fellowship of the Ring</li>
-                <li>Pulp Fiction</li>
-            </ul>
+            <h2>Ordenar Peliculas:</h2>
+            <div id="lista"></div>
             <button id="btn-mostrarPelisAsc">Ordenar Ascendentes</button>
             <button id="btn-mostrarPelisDes">Ordenar Descendentes</button>
-            <div class="row">
-                <div class="column">
-                    <div id="pelis-asc-container"></div>
-                </div>
-                <div class="column">
-                    <div id="pelis-des-container"></div>
-                </div>
-            </div>
             <hr>
+        </section>
+        <section>
+            <h2>Eliminar Película:</h2>
+            <div>
+                <input type="text" id="peli-id-input" placeholder="Ingresa el ID de la peli">
+            </div>
+            <button id="btn-eliminar">Eliminar Peli</button>
+            <div id="eliminar-container"></div>
+            <hr>
+        </section>
+        <section>
+            <h2>Pasar a Mayúscula:</h2>
+            <form>
+                <input type="text" id="strings" name="strings" placeholder="Escribe algo aquí">
+                <div>
+                    <button type="submit">Pasar a Mayúscula</button>
+                </div>
+                <div id="mayuscula-container"></div>
+            </form>
         </section>
         <script src="app.js"></script>
     </body>
