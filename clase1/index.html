@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="section">
+        <h1 id="counter">0</h1>
+        <button onclick="increment()">Incrementar</button>
+        <button onclick="decrement()">Decrementar</button>
+        <hr>
+    </section>
+    <section class="section">
+        <button onclick="addRandom()">Agregar número random</button>
+        <div class="numeros">
+            <p id="numeros"></p>
+        </div>
+        <button onclick="ordenar()">Ordenar</button>
+    </section>
+    <section class="section" id="fondo">
+        <hr>
+        <label>Ingresa un número del 1 al 10:</label>
+        <div>
+            <input class="userInput" type="text" id="userInput">
+        </div>
+	    <button onclick="validar()">Validar</button>
+        <hr>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
