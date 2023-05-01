@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clase 3</title>
+        <link rel="stylesheet" href="app.css">    
+    </head>
+    <body>
+        <div id="app">
+
+            <!-- variables declaradas en js -->
+            {{ message }}
+            <hr>
+            {{ miMensaje }}
+            <hr><hr>
+            
+            <!-- nuevo value -->
+            {{ valor }}
+            <hr>
+            <input type="text" v-model="valor">
+            <hr>
+            <!-- nuevo onclick -->
+            <input type="button" id="btn" value="Sumar!" v-on:click="valor++" />
+            <input type="button" id="btn2" value="Restar!" v-on:click="valor--" />
+            <hr><hr>
+
+            <!-- nuevo iterar y binding de atributos -->
+            {{ miLista }}
+            <ul v-show="mostrando">
+                <li v-for="(item,index) in miLista"
+                :title = "item.id"
+                :class = "item.genero"
+                >{{ item.nombre }}</li> 
+            </ul>
+            <!-- agregar persona -->
+            <input type="button" value="Agregar Persona" v-on:click="agregarPersona()">
+            <!-- mostrando -->
+            <input type="button" value="Mostrar/Ocultar" v-on:click="mostrando = !mostrando">
+            <hr><hr>
+
+            <!-- consumiendo datos de una api -->
+            <div v-for="(item, index) in personajes ">
+                Nombre : {{item.name}}<br>
+                Genero : {{item.gender}}<br>
+                <img 
+                :src="item.image"
+                >
+            </div>
+
+        </div>
+        <!-- production version, optimized for size and speed -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
