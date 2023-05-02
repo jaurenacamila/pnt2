@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="checkbox" v-model="uno"> Uno
+            <input type="checkbox" v-model="dos"> Dos
+            <input type="text" v-model="message">
+            <input type="text" v-model="otro" :disabled="valor">
+            <label>{{valor}}</label>
+            <label>{{otrovalor}}</label>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
